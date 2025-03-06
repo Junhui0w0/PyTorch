@@ -1,6 +1,10 @@
 # PyTorch  
 
+<<<<<<< HEAD
 ## 2025-03-06: Tensor  
+=======
+**[2025-03-06]**  
+>>>>>>> 65e2225e208821d64b9a25988b9240f097e3ded9
 1-1. Tensor의 속성에는 shape, dtype, device가 있다.  
 1-2. dtype은 데이터 타입을, device는 Tensor가 저장되는 위치(cpu,gpu)가 기록된다.  
 1-3. cpu에 저장되는 경우, Tensor와 Numpy의 배열은 동일한 메모리를 공유한다.  
@@ -16,6 +20,7 @@
 4-1. Numpy는 Tensor로, Tensor는 Numpy로 변환 가능하다.  
 
 ----
+<<<<<<< HEAD
 
 ## 2025-03-06: Dataset & DataLoader  
 1-1. Dataset은 학습 데이터와 테스트 데이터를 저장하는 곳  
@@ -29,3 +34,5 @@
 3-1. Torch의 Dataset을 사용할 땐 root(저장소), train(학습? 테스트?), download(root에 없을시 다운?), transform(형식) 지정  
 3-2. 사용자 정의 파일에서 Dataset을 불러올 땐 _\_init__, _\_len__, _\_getitem__ 을 반드시 구현해야 한다.  
 3-3. __getitem__은 주어진 index 인자를 통해 해당 index의 Label을 출력할 수 있다.  
+=======
+>>>>>>> 65e2225e208821d64b9a25988b9240f097e3ded9
