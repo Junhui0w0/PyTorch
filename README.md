@@ -1,6 +1,6 @@
 # PyTorch  
 
-**2025-03-06**  
+**[2025-03-06]**  
 1-1. Tensor의 속성에는 shape, dtype, device가 있다.  
 1-2. dtype은 데이터 타입을, device는 Tensor가 저장되는 위치(cpu,gpu)가 기록된다.  
 1-3. cpu에 저장되는 경우, Tensor와 Numpy의 배열은 동일한 메모리를 공유한다.  
