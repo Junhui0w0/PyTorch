@@ -31,3 +31,27 @@
 3-3. __getitem__은 주어진 index 인자를 통해 해당 index의 Label을 출력할 수 있다.  
 
 ----
+
+## 2025-03-07: Transform ##  
+1-1. 일반적인 데이터는 기계를 학습시키에 불순한 상태이다.  
+1-2. transform을 통해 데이터를 가공할 수 있다.  
+
+2-1. Feature(특징)은 Dataset에서 데이터를 불러올 때 transform으로 지정할 수 있다.  
+2-2. 이를 통해 Feature은 Normalization 된다.  
+
+3-1. Label(정답)은 Dataset에서 데이터를 불러올 때 target_transformd으로 지정할 수 있다.  
+3-2. 이를 통해 Label은 One-Hot Encoding 형식이 된다.  
+3-3. One-Hot Encoding == 0과 1로 구성 -> 정답인 요소만 1로 수정  
+
+----
+
+## 2025-03-07: Neural Network ##  
+1-1. PyTorch의 모든 모듈은 nn.Module의 기능을 상속받는다.  
+
+2-1. nn.Sequential == 기능을 순차적으로 수행할 수 있다.  
+2-2. nn.Linear == 은닉층을 생성하고, 출력 데이터 수를 변경할 수 있다.  
+2-3. nn.ReLU (비선형 함수) == 복잡한 데이터를 학습할 수 있다.  
+2-4. nn.Flatten() == 평탄화 작업 == nn.Linear에 데이터 전달한다.  
+
+3-1. Softmax 함수를 통해 주어진 값을 확률분포 형태로 변형한다.  
+3-2. 해당 확률에서 가장 큰 값을 반환한다.  
