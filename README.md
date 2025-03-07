@@ -27,6 +27,7 @@
 2-4. 다만, 학습 속도가 느려지고 GPU의 효율성이 떨어짐  
 
 3-1. Torch의 Dataset을 사용할 땐 root(저장소), train(학습? 테스트?), download(root에 없을시 다운?), transform(형식) 지정  
+3-1-1. '?' 는 True or False 의 값을 지정할 수 있다.  
 3-2. 사용자 정의 파일에서 Dataset을 불러올 땐 \_\_init\_\_, \_\_len\_\_, \_\_getitem\_\_ 을 반드시 구현해야 한다.  
 3-3. __getitem__은 주어진 index 인자를 통해 해당 index의 Label을 출력할 수 있다.  
 
