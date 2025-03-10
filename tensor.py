@@ -86,4 +86,4 @@ print(f"n: {n}")
     #3-1) 이때, tensor.sum()의 dtype은 torch.Tensor이다.
     #3-2) 타입을 변경하고 싶으면 (tensor.sum()).item() 을 통해 float32 타입으로 변환 가능하다.
 
-# 4) Numpy는 Tensor로, Tensor는 Numpy로 변환 가능하다.  
+# 4) Numpy는 Tensor로, Tensor는 Numpy로 변환 가능하다. 
