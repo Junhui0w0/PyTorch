@@ -99,7 +99,8 @@
 
 ## 2025-03-09: AI Weekly 요약 ##  
 1-1. 기사 실기 대비하느라 PyTorch 학습 연기 \
-1-2. 아래는 아침에 읽었던 AI Weekly News Letter
+1-2. 아래는 아침에 읽었던 AI Weekly News Letter \
+1-3. [링크] https://www.nytimes.com/2025/02/27/learning/what-students-are-saying-about-ai-and-the-future-of-work.html
 
 2-1. '외국 학생들의 AI에 대한 평가 - 부정' \
 2-1-1. 반복가능한 업무는 tech 관련 기술직 이라도 대체될 수 있다. \
