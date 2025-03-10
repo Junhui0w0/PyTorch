@@ -1,16 +1,27 @@
 import torch
-print("Using torch version", torch.__version__)
-torch.manual_seed(42) #동일 결과 방지
+import torch.nn as nn
 
-#예제 데이터로 실습
-x= torch.tensor([[1., -1.],
-              [2., 3.]], requires_grad=True) #requires_grad=Tensor에 대한 미분 과정 기록 여부
-y = x.pow(2).sum() #y=x^2
-y.backward() #자동미분 -> dy/dx = 2x
-print(f"\ndy/dx = {x.grad}")
+# 모델 클래스 정의
+class NeuralNetwork(nn.Module):
+    def __init__(self):
+        super(NeuralNetwork, self).__init__()
+        self.flatten = nn.Flatten()
+        self.linear_relu_stack = nn.Sequential(
+            nn.Linear(28*28, 512),
+            nn.ReLU(),
+            nn.Linear(512, 512),
+            nn.ReLU(),
+            nn.Linear(512, 10)
+        )
 
-x = torch.tensor(2.0, requires_grad=True)
-y = 2 * x**2 + 5 #y=2x^2 + 5
-y.backward() #역전파 
-print(f"\n수식 y를 x로 미분한 값: {x.grad}") #y'=4x
+    def forward(self, x):
+        x = self.flatten(x)
+        logits = self.linear_relu_stack(x)
+        return logits
 
+# 모델 생성 및 저장
+model = NeuralNetwork()
+torch.save(model, 'model.pth')  # 모델 전체 저장
+
+# 모델 로드 (클래스 정의가 필요)
+model = torch.load('model.pth')
