@@ -198,7 +198,7 @@ $RECYCLE.BIN/
 
 # Windows shortcuts
 *.lnk
-*.txt
+api_key.txt
 \!*
 [0-9]*
 *.pth
