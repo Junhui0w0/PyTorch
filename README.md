@@ -110,7 +110,7 @@ cf. 03/10: 학습 데이터(model.pth, model_weights.pth) 업로드 오류로 �
 
 ----
 
-## 2025-03-11: Autograd Review ##
+## 2025-03-11: Autograd Review (강의 퀴즈 대비) ##
 1-1. PyTorch는 GPU를 활용해 연산 속도를 높이고자 N차원 형태의 Tensor를 사용한다. \
 1-1-1. Tensor는 Numpy와 유사하지만, Numpy는 GPU 환경에서 사용할 수 없어 제외됐다. \
 1-2. 신경망 구축 및 학습하는 과정에서 자동 미분(Autograd) 과정을 수행할 수 있다.
