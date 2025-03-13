@@ -124,7 +124,7 @@ cf. 03/10: 학습 데이터(model.pth, model_weights.pth) 업로드 오류로 �
 
 ----
 
-## 2025-03-11: Text(w.RNN) ##
+## 2025-03-11: Text(w.RNN) - 네트워크 구축 ##
 1-1. 캡스톤디자인2 주제로 텍스트 분석을 선정하여 위 주제를 선행한다. \
 1-2. 다국어가 정리된 txt 파일은 학습에 시키기에 적합하지 않아 One-Hot Vector화를 진행해야 한다. \
 1-3. One-Hot Encoding 이란 정답을 제외한 나머지 부분은 0으로, 정답은 1로 구성되어 있는 것을 말한다. \
@@ -133,3 +133,15 @@ cf. 03/10: 학습 데이터(model.pth, model_weights.pth) 업로드 오류로 �
 2-1. 네트워크는 RNN을 이용해 구축한다. \
 2-2. RNN은 입력, 은닉, 출력 뒤 행동(LogSoftmax) 총 3계층으로 구성되어 있다. \
 2-3. RNN을 직접 구현하지 않고, nn.RNN을 활용할 수 있다. 
+
+----
+
+## 2025-03-13: Text(w.RNN) - 학습 ##
+1-1. 옵티마이저로 LogSoftmax 함수를 사용하면, 손실함수로는 NLLLoss 함수를 사용해야 한다. \
+1-2. LogSoftmax함수는 텐서를 Log 적용 후 Softmax함수로 확률분포 형태로 변환한다. \
+1-3. NLLLoss 함수는 로그-확률 값의 음의 우도를 계산한다. 
+
+2-1. NLLLoss + LogSoftmax == CrossEntropy 이다.\
+2-2. topk() 함수는 최대 value와 해당 값의 index를 반환한다.
+
+cf. 정보처리기사 실기 시험 당일까지 학습 연기
